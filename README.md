@@ -35,3 +35,5 @@ A Sovled State for above example will look like:
 | 1 2 6 | 5 8 7 | 4 9 3 | 
 | 3 4 9 | 2 1 6 | 8 5 7 | 
 
+Approach: We can solve this problem by trying each and every number for every empty position but time complexity for this method is O(9^N^2) where N is dimension of 
+
