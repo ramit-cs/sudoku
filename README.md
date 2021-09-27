@@ -35,5 +35,14 @@ A Sovled State for above example will look like:
 | 1 2 6 | 5 8 7 | 4 9 3 | 
 | 3 4 9 | 2 1 6 | 8 5 7 | 
 
-Approach: We can solve this problem by trying each and every number for every empty position but time complexity for this method is O(9^N^2) where N is dimension of 
+Naive Approach: We can solve this problem by trying each and every number for every empty position but time complexity for this method is exponential ,i.e, O(9^N^2), where N is dimension of sudoku matrix. If we take N = 9, 9^81 is a very massive number and hence the naive approach is very inefficient.
+
+Backtracking Approach: 
+1) Pick an empty entry.
+2) Try a number.
+3) check if it is valid entry or not
+4) if valid: go to 1
+5) else: go to 2 and try another number
+  
+Even though Upper Bound for Backtracking Approach is O(9^N^2), it still works faster and give results within seconds for a 9*9 sudoku.
 
